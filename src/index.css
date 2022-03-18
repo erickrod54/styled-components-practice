@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*this style align the text to center and capitalize it,
+*--the center where is contained the 'div'--
+**/
+.title{
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/*this style is for the button**/
+.btn{
+  background: #171717;
+  /*the color of the button text**/
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  /*the hand of the cursor**/
+  cursor: pointer;
+  text-transform: capitalize;
+  padding: 0.25rem;
+  display: block;
+  width: 200px;
+  /*this property set it on center**/
+  margin: 1rem auto;
+}
