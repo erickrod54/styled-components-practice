@@ -1,3 +1,10 @@
+/**Style Components app version 2 - Features:
+ *        --> Setting up Global Stylesheet
+ *        --> Building section-title to hello
+ *             world
+ * 
+ * Note: this version contains some changes from version 1
+ */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -14,6 +21,11 @@ body {
   text-align: center;
   text-transform: capitalize;
 }
+
+.section-title{
+  color:powderblue
+}
+
 
 /*this style is for the button**/
 .btn{
