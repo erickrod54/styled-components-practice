@@ -1,22 +1,19 @@
 import React from 'react'
-import styled from 'styled-components';
+import BasicTitle from './components/title.styles';
+import { DefaultButton } from './components/button.styles';
 
-/**Style Components app version 3 - App js file - Features:
- *        --> Building Style Component for 'BasicTitle'
+/**Style Components app version 4 - App js file - Features:
+ *        --> Building Style Component for 'DefaultButton'.
+ *        --> Restructuring directory to separate style 
+ *            components its own file.
+ *        --> Importing Style Components.
+ *        --> Customizing 'BasicTitle' implementing 'props' 
  * 
- * Note: to build style-components must be previously installed
- * 'styled-components' library and imported styled from styled
- * components, and to track bugs 'vscode-styled-components'
- * extension
+ * Note: Separating the styles components is the good practice
+ * so they can be organized, to code will be more readable and
+ * and can be easily modified
  */
 
-/**here i buil 'BasicTitle' Component */
-/**this kind of sintax is called tagged template string
- * reference: freecodecamp article*/
-const BasicTitle = styled.h1`
-  text-align: center;
-  text-transform: capitalize;
-`
 
 function App() {
   return (
@@ -25,12 +22,11 @@ function App() {
       {/**here i apply the Style Component to the title */}
 
       {/**Inspecting with the browser will show the h1*/}
-     <BasicTitle>Styled Component</BasicTitle>
-     <BasicTitle>Styled Component</BasicTitle>
-     <BasicTitle>Styled Component</BasicTitle>
-     <BasicTitle>Styled Component</BasicTitle>
-       <button className='btn'>click me</button> 
-      
+     <BasicTitle>Styled Component</BasicTitle> 
+     {/**this is the title i'm going to customize*/}
+     {/**i call the prop 'customPurple' */}
+     <BasicTitle customPurple>Styled Component</BasicTitle> 
+     <DefaultButton>click me</DefaultButton>
     </div>
     </>
   );
