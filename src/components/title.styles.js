@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-/**Style Components app version 4 - 'title.styles' Component - 
+/**Style Components app version 5 - 'title.styles' Component - 
  * Features:
  * 
- *        --> Building Style Component for 'BasicTitle'. 
+ *        --> Accessing props by destructuring. 
  * 
  * Note: A good practice is to keep on this file the different
  * titles that i need  for the app in order to track them
@@ -11,10 +11,12 @@ import styled from 'styled-components';
 const BasicTitle = styled.h1`
   text-align: center;
   text-transform: capitalize;
-  /**the value will be the prop in template string, scoping
-  * directly the name of the prop -customPurple- and the value 
-  * -pruple shade #e2bfd2 -*/
-  color:${(props) => props.customPurple && '#e2bfd2'}
+  /**Here i only destructure it with the exact name and accesed*/
+  //color:${({ customPurple }) => customPurple && '#e2bfd2'}
+
+  /**Here i destructure it the same way but i set a ternary operator
+  * to condition the style for element who posses or not CustomPurple*/
+  color:${({ customPurple }) => customPurple ? '#e2bfd2' : '#9e934d'}
 `
 
 export default BasicTitle
