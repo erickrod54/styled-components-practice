@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
-/**Style Components app version 4 - 'button.styles' Component - 
+/**Style Components app version 5 - 'button.styles' Component - 
  * Features:
  * 
- *        --> Building Style Component for 'DefaultButton'. 
+ *        --> Building Extend Styled Component for 
+ *           'HpsterButton' Component. 
  * 
- * Note: A good practice is to keep on this file the different
- * buttons that i need  for the app in order to track them
+ * Note: The 'styled' functionality is not limited to html 
+ * elements, also is applied to 'React Components' 
+ * 
+ *      styled() ---this is the syntax to React Components
  */
 
 
@@ -25,4 +28,14 @@ export const DefaultButton = styled.button`
   width: 200px;
   /*this property set it on center**/
   margin: 1rem auto;
+`
+
+/**Here i'm applying the style for a react Component
+ * 'DefaultButton' that is the button from above
+ */
+export const HipsterButton = styled(DefaultButton)`
+  width:400px;
+  background: transparent;
+  color: 	#0e1111;
+  border: 2px solid #0e1111;
 `
