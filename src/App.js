@@ -1,29 +1,18 @@
 import React from 'react'
-import BasicTitle from './components/title.styles';
-import { DefaultButton, HipsterButton } from './components/button.styles';
+import Setup from './setup-app/more-complex-title-app/morecomplextitle-app'
 
-/**Style Components app version 5 - App js file - Features:
- *        --> Importing and Placing 'HipsterButton'
+/**Style Components app version  6 - App js file - Features:
+ *        --> Mounting 'StyledComponentApp' as 'Setup'
  * 
- * Note: 'HipsterButton' is an extended styled 'React Component'
+ * Note: This update is made to add styled app easier by mounting
+ * them in App js
  */
 
 
 function App() {
   return (
     <>
-    <div style={{padding:'2rem', backgroundColor:'#b11226'}}>
-      {/**here i apply the Style Component to the title */}
-
-      {/**Inspecting with the browser will show the h1*/}
-     <BasicTitle>Styled Component</BasicTitle> 
-     {/**this is the title i'm going to customize*/}
-     {/**i call the prop 'customPurple' */}
-     <BasicTitle customPurple>Styled Component</BasicTitle> 
-     <DefaultButton>click me </DefaultButton>
-     {/**Here i set 'HipsterButton' */}
-     <HipsterButton>Hipster Click </HipsterButton>
-    </div>
+      <Setup />
     </>
   );
 }
