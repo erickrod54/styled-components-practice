@@ -1,8 +1,9 @@
 import React from 'react'
 import Setup from './setup-app/more-complex-title-app/morecomplextitle-app'
 
-/**Style Components app version  6 - App js file - Features:
- *        --> Mounting 'StyledComponentApp' as 'Setup'
+/**Style Components app version  7 - App js file - Features:
+ *        --> Applying 'title' prop to Setup, in order to work
+ *            on 'MoreComplexTitle'
  * 
  * Note: This update is made to add styled app easier by mounting
  * them in App js
@@ -12,7 +13,7 @@ import Setup from './setup-app/more-complex-title-app/morecomplextitle-app'
 function App() {
   return (
     <>
-      <Setup />
+      <Setup title={'more complex title'}/>
     </>
   );
 }
