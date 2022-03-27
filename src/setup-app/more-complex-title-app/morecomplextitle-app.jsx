@@ -1,20 +1,16 @@
 import React from "react";
 import { Wrapper } from "./components/title.styles";
-/**More Complex Styled app version  1 - 'MoreComlexTitle' 
+import RandomUnderline from "./randomtitle.component";
+
+/**More Complex Styled app version  2 - 'MoreComlexTitle' 
  * Component - Features:
  * 
- *        --> Building 'MoreComplexTitle' Component.
- *        --> Building 'Wrapper' styled Component.
- *        --> Applying underline class to a 'div'
- *            inside the 'Wrapper'. 
- *        --> Making a 'title' prop that will contain 
- *            the title value that later will be added on
- *            'App js' file.
+ *        --> Importing and Placing 'RandomUnderline' 
+ *            Component
  * 
- * Note: This topic 'More Complex Styled' is very important
- * because i can apply styles to a series of 'JSX' elements
- * inside the 'Wrapper' and add styles classes with no danger
- * of name colisions.
+ * Note: The awesome fact of this implementation is that i won't 
+ * have class name bugs styled-components generates unique class 
+ * names concerning to duplication, overlap or misspellings.
  */
 
 const MoreComplexTitle = ({ title }) => {
@@ -27,6 +23,7 @@ const MoreComplexTitle = ({ title }) => {
             <div className="underline">
             </div>
         </Wrapper>
+        <RandomUnderline />
         </>
     )
 }
