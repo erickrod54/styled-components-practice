@@ -1,9 +1,12 @@
-/**Style Components app version 2 - Features:
- *        --> Setting up Global Stylesheet
- *        --> Building section-title to hello
- *             world
+/**More Complex Styled app version  4 - 'MoreComplexTitle' 
+ * Component - Features:
  * 
- * Note: this version contains some changes from version 1
+ *        --> Building Style class 'title' prop 'color', and
+ *            Style class 'bg-redwine-shade' as 'Global Styles'
+*             to be overwriting later on 'Wrapper'.
+ * 
+ * Note: This style sheet originaly is from Styled-app and is
+ the 'Global Style' sheet for 'MoreComplexTitle app'
  */
 body {
   margin: 0;
@@ -20,6 +23,14 @@ body {
 .title{
   text-align: center;
   text-transform: capitalize;
+  color:yellowgreen
+}
+
+.bg-redwine-shade{
+  width: 90%;
+  height: 5rem;
+  margin: 0 auto;
+  background: #790000;
 }
 
 .section-title{
