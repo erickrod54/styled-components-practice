@@ -1,17 +1,16 @@
 import styled from 'styled-components';
 
-/**More Complex Styled app version  2 - 'title.styles' sheet 
+/**More Complex Styled app version  4 - 'title.styles' sheet 
  * Component - Features:
  * 
- *        --> Building 'WrapperRandom' Styled Component.
- *        --> Building a 'underline' class style 
+ *        --> Building a class Style 'title' that will 
+ *            overwrite class Style 'title' from 'Global
+ *            Styles' sheet 
  * 
- * Note: I don't extend 'Wrapper' to 'WrapperRandom' because
- * i'll need just the 'Wrapper' > 'underline' style
- * 
- * the awesome fact of this implementation is that i won't have
- * class name bugs styled-components generates unique class 
- * names concerning to duplication, overlap or misspellings.
+ * Note: As the classes written on the Style Component -for
+ * this case Wrapper- are more sprecifics -every component has
+ * the className id, that is unique- the 'Specific Style Class' 
+ * overwrite 'Global Styles' 
  */
 
 export const Wrapper = styled.div`
@@ -25,6 +24,10 @@ export const Wrapper = styled.div`
         background: #645cff;
         margin: 0 auto;
     }
+    .title{
+        color: blueviolet;
+    }
+    
 `
 
 export const WrapperRandom = styled.div`
