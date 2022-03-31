@@ -1,13 +1,18 @@
-/**More Complex Styled app version  4 - 'MoreComplexTitle' 
- * Component - Features:
+/**More Complex Styled app version  5 - 'index css' - Features:
  * 
- *        --> Building Style class 'title' prop 'color', and
- *            Style class 'bg-redwine-shade' as 'Global Styles'
-*             to be overwriting later on 'Wrapper'.
+ *        --> Building a 'Global Variable' to keep and distribute
+ *            a color.
  * 
- * Note: This style sheet originaly is from Styled-app and is
- the 'Global Style' sheet for 'MoreComplexTitle app'
+ * Note: to set colors from a single global source to the 
+ * component i need it.
  */
+
+ /*Here i build a target the 'root' element to create the 
+ *variable, i set as 'primary' (but can be any name)*/
+ :root{
+  --primary: yellowgreen
+ }
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
