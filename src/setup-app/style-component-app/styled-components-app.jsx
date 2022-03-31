@@ -1,11 +1,10 @@
 import React from "react";
-import  BasicTitle  from './components/title.styles'
+import { BasicTitle } from "./components/title.styles";
 import { DefaultButton } from './components/button.styles'
 import { HipsterButton } from "./components/button.styles";
 
-/**Style Components app version  6 - App js file - Features:
- *        --> Updating app to own directory
- *        --> Importing Styled Components 
+/**Style Components app version  7 - App js file - Features:
+ *        --> Importing Explicitly Basic Title 
  * 
  * Note: This update is made to add styled app easier by mounting
  * them in App js
