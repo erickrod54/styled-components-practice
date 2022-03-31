@@ -1,12 +1,13 @@
 import React from 'react'
 import Setup from './setup-app/more-complex-title-app/morecomplextitle-app'
+import AlternativeTitle from './setup-app/more-complex-title-app/alternativetitle.component';
 
-/**Style Components app version  7 - App js file - Features:
- *        --> Applying 'title' prop to Setup, in order to work
- *            on 'MoreComplexTitle'
+/**Style Components app version  8 - App js file - Features:
+ *        --> Importing and Placing 'AlternativeTitle' Component
+ *            with a 'title' prop of 'Alternative Title'
  * 
- * Note: This update is made to add styled app easier by mounting
- * them in App js
+ * Note: This Component will be applied to set a 'Global Variable'
+ * Style class using utils approach 
  */
 
 
@@ -14,6 +15,7 @@ function App() {
   return (
     <>
       <Setup title={'more complex title'}/>
+      <AlternativeTitle title={'Alternative Title'}/>
     </>
   );
 }
