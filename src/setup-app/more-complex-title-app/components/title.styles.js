@@ -1,16 +1,14 @@
 import styled from 'styled-components';
+import { colors } from '../../../utils';
 
-/**More Complex Styled app version  4 - 'title.styles' sheet 
+/**More Complex Styled app version  6 - 'title.styles' sheet 
  * Component - Features:
  * 
- *        --> Building a class Style 'title' that will 
- *            overwrite class Style 'title' from 'Global
- *            Styles' sheet 
+ *        --> Building 'underline-alt' Style Class to apply
+ *            a unique color style to 'AlternativeTitle'. 
  * 
- * Note: As the classes written on the Style Component -for
- * this case Wrapper- are more sprecifics -every component has
- * the className id, that is unique- the 'Specific Style Class' 
- * overwrite 'Global Styles' 
+ * Note: Wrapper Style Component will wrapp AlternativeTitle will 
+ * apply 'underline-alt' Style class
  */
 
 export const Wrapper = styled.div`
@@ -22,6 +20,12 @@ export const Wrapper = styled.div`
         width: 5rem;
         height: 0.25rem;
         background: #645cff;
+        margin: 0 auto;
+    }
+    .underline-alt{
+        width: 5rem;
+        height: 0.25rem;
+        background: ${colors.primary};
         margin: 0 auto;
     }
     .title{
