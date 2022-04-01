@@ -1,14 +1,17 @@
 import styled from 'styled-components';
 import { colors } from '../../../utils';
 
-/**More Complex Styled app version  6 - 'title.styles' sheet 
+/**More Complex Styled app version  7 - 'title.styles' sheet 
  * Component - Features:
  * 
- *        --> Building 'underline-alt' Style Class to apply
- *            a unique color style to 'AlternativeTitle'. 
+ *        --> Building 'box' Class Style as a Custom Border.
+ *        --> Applying 'border' 'Global Variable' defined on
+ *            'index.css' file 
  * 
- * Note: Wrapper Style Component will wrapp AlternativeTitle will 
- * apply 'underline-alt' Style class
+ * Note: the 'border' custom prop is build here, the color
+ * can be set at ':root' element (this is using a ':root' element
+ * approach, with utils approach can be customize even more
+ * as is a js file)
  */
 
 export const Wrapper = styled.div`
@@ -31,7 +34,11 @@ export const Wrapper = styled.div`
     .title{
         color: blueviolet;
     }
-    
+    /**Here i build the 'box' Style */
+    .box{
+        height: 10px;
+        border: var(--mainBorder);
+    }
 `
 
 export const WrapperRandom = styled.div`
