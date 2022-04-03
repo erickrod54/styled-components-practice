@@ -1,15 +1,15 @@
 import React from "react";
 import { Wrapper } from "./components/title.styles";
 
-/**More Complex Styled app version  6 - 'alternativetitle' 
+/**More Complex Styled app version  8 - 'alternativetitle' 
  * Component- Features:
  * 
- *        -->Building 'AlternativeTitle' Component.
- *        -->Applying 'Global Variables' 'colors' Styles using 
- *           utils approach
+ *        -->Building a JSX 'div' element to apply 'box-alt'
+ *          Style Class to it
  * 
- * Note: this is the second approach to apply 'Global Variables'
- * Styles, the first was using ':root' element 
+ * Note: 'box-alt' Class Style will use 'Global Variable' to
+ * set a Custom 'border', this will be done using the second
+ * approach 'utils' -refer to 'utils js' file-
  */
 
  
@@ -20,6 +20,7 @@ import { Wrapper } from "./components/title.styles";
          <Wrapper>
              <h1>{title}</h1>
              <div className="underline-alt" />
+             <div className="box-alt" />
          </Wrapper>
          </>
      )
