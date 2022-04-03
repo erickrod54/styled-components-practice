@@ -1,18 +1,17 @@
-/**More Complex Styled app version  7 - 'index css' - Features:
+/**Card app version  1 -index css file - Features:
+
+ *        --> Building up a background for 'Card' Component
+ *            by a 'Global Variable'.
  * 
- *        --> Building a 'Global Variable' to keep and distribute
- *            a color for Custom 'box' Style Class.
- * 
- * Note: to set colors from a single global source to the 
- * component i need it.
+ * Note: Here i set it up as a 'body' prop, i can also 
+ * target ':root' element or 'utils' approach
  */
 
- /*Here i build a target the 'root' element to create the 
- *variable, i set as 'primary' (but can be any name)*/
  :root{
   --primary: yellowgreen;
    /*Here i build a 'Global VAriable' to customize it**/
   --mainBorder:1px solid whitesmoke;
+  --cardBackGround: white;
  }
 
 body {
@@ -22,6 +21,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #f2f4f8;
 }
 
 /*this style align the text to center and capitalize it,
