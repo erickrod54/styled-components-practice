@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 import { colors } from '../../../utils';
+import { setupBorder } from '../../../utils';
 
-/**More Complex Styled app version  7 - 'title.styles' sheet 
+/**More Complex Styled app version  8 - 'title.styles' sheet 
  * Component - Features:
  * 
- *        --> Building 'box' Class Style as a Custom Border.
- *        --> Applying 'border' 'Global Variable' defined on
- *            'index.css' file 
+ *        --> Importing 'setupBroder' functionality and setting
+ *            as 'box-alt' border prop.
+ *        --> Setting values for 'setupBorder'.
  * 
- * Note: the 'border' custom prop is build here, the color
- * can be set at ':root' element (this is using a ':root' element
- * approach, with utils approach can be customize even more
- * as is a js file)
+ * Note: 'box-alt' Class Style will use 'Global Variable' to
+ * set a Custom 'border', this will be done using the second
+ * approach 'utils' -refer to 'utils js' file-
  */
 
 export const Wrapper = styled.div`
@@ -25,12 +25,21 @@ export const Wrapper = styled.div`
         background: #645cff;
         margin: 0 auto;
     }
+    /**---this styles are applied to 'AlternativeTitle'
+    ***----Component-------------------------------- */
     .underline-alt{
         width: 5rem;
         height: 0.25rem;
         background: ${colors.primary};
         margin: 0 auto;
     }
+    .box-alt{
+        width: 48rem;
+        height: 10px;
+        margin: 0 auto;
+        border: ${setupBorder({width:5, type: 'solid', color:'black'})};
+    }
+    /**-------------------------------------------- */
     .title{
         color: blueviolet;
     }
