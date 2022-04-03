@@ -1,7 +1,7 @@
-/**More Complex Styled app version  5 - 'index css' - Features:
+/**More Complex Styled app version  7 - 'index css' - Features:
  * 
  *        --> Building a 'Global Variable' to keep and distribute
- *            a color.
+ *            a color for Custom 'box' Style Class.
  * 
  * Note: to set colors from a single global source to the 
  * component i need it.
@@ -10,7 +10,9 @@
  /*Here i build a target the 'root' element to create the 
  *variable, i set as 'primary' (but can be any name)*/
  :root{
-  --primary: yellowgreen
+  --primary: yellowgreen;
+   /*Here i build a 'Global VAriable' to customize it**/
+  --mainBorder:1px solid whitesmoke;
  }
 
 body {
