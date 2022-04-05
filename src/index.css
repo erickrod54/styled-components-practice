@@ -1,10 +1,12 @@
-/**Card app version  1 -index css file - Features:
+/**Card app version  2 -index css file - Features:
 
- *        --> Building up a background for 'Card' Component
- *            by a 'Global Variable'.
+ *        --> Building a variable to set color to the 
+ *            paragrah.
+ *        --> Setting a media query 'test' for 'Card'
+ *            Component.
  * 
- * Note: Here i set it up as a 'body' prop, i can also 
- * target ':root' element or 'utils' approach
+ * Note: The syntax for the media query on css is different
+ * to as when is applied to a Style Component
  */
 
  :root{
@@ -12,6 +14,7 @@
    /*Here i build a 'Global VAriable' to customize it**/
   --mainBorder:1px solid whitesmoke;
   --cardBackGround: white;
+  --paraGraph: 	#9400D3;
  }
 
 body {
@@ -32,6 +35,16 @@ body {
   text-transform: capitalize;
   color:yellowgreen
 }
+
+/**
+------this is the media query syntax
+------for regular css
+
+@media screen and (min-width:768px){
+  
+}
+
+*/
 
 .bg-redwine-shade{
   width: 90%;
