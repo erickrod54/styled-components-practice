@@ -2,19 +2,17 @@ import React from "react";
 import { StyledCard } from "./style-components/style.components";
 import defaultImage from '../../assets/prisma_muestra.svg'
 
-/**Card app version  1 - 'Card' Component - Features:
+/**Card app version  2 - 'Card' Component - Features:
  * 
- *        --> Building 'Card' Component.
- *        --> Building a JSX 'div' elememtnet with a 
- *            className 'underline' to separate 'img'
- *            and 'footer'
- *        --> Importing a 'defaultImage' to set it on 
- *            JSX 'img' tag. 
+ *        --> Placing an JSX 'h4' to test how styles
+ *            outside the nest are applied
  * 
- * Note: This Component will be applied to set a 'Global Variable'
- * Style class using utils approach 
+ * Note: The styles are built for ' StylesCard > h4 ' and 
+ * for ' StylesCard > footer > h4 ' others styles are 
+ * applied 
  * 
- * 'assets' must be always on 'src' directory
+ * Adviceable no more than one level deep, for features
+ * as 'media querys' can be complex to apply them
  */
 
 const Card = () => {
@@ -35,6 +33,7 @@ const Card = () => {
                 <h4>project name</h4>
                 <p>$100</p>
             </footer>
+            <h4>Project Description</h4>
             </StyledCard>
         </>
     )
