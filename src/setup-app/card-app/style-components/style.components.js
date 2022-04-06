@@ -1,30 +1,14 @@
 import styled from "styled-components";
 
-/**Card app version  2 - style.component js file - Features:
+/**Card app version  3 - style.component js file - Features:
  * 
- *        --> Applying styles to JSX 'footer' element.
+ *        --> Implementing Pseudo element on level 1
+ *            'footer' > 'h4' > '&::before'.
  * 
- *        --> Nesting a 'h4' element inside 'footer' to
- *            set it styles.
- * 
- *        --> Applying 'Media Query' to resize 'StyleCard'
- *            Component. 
- *  
- *        --> Applying 'Hover' effect to level 1 to change the 
- *            color on 'StylesCard > footer > h4'.
- * 
- *        --> Targeting with 'hover' StyleCard -article- to create 
- *             a box shadow effect 'StylesCard '. 
- * 
- *        --> Targeting with 'hover' JSX 'footer' element to change
- *            the 'footer' background
- * 
- * Note: the nesting is very important, is as Specific Styles
- * overwrite global Styles, if i for example leave JSX 'h4'
- * outside the footer the 'h4' styles will behave as 'Global
- * Styles' applying the styles everywhere inside and outside
- * 'footer' element, thats why the solution is nest it in
- * 'footer'
+ * Note: in this case i'm adding a psuedo element to set
+ * a string on level before the 'h4' renders, this '&::'
+ * pseudo element syntax has multiple choices depending on 
+ * the need.
  * 
  */
 
@@ -62,6 +46,12 @@ export const StyledCard = styled.article`
         h4{
             text-transform: capitalize;
             color: red;
+            /**Here i set the pseudo element
+             *to render the string 'Name' before 'h4' */
+            &::before{
+                content: 'Name: ';
+                color: blueviolet;
+            }
         }
         p{
            color: var(--paraGraph);
