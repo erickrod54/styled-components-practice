@@ -1,22 +1,21 @@
 import React from 'react';
-import Setup from './setup-app/card-app/card.component';
-import GlobalStyles from './global-styles';
+import Setup from './setup-app/dark-theme-app/darktheme-app'
 
-/**Card app version  3 - 'App' js file - Features:
+/**DarkTheme app version  1 - 'App' js file - 
+ * Features:
  * 
- *        --> Importing and placing 'GolbalStyles' component.
+ *        --> Setting up 'DarkTheme' app.
  * 
- * Note: Here i import the 'Card' Component
+ * Note: this app is about implementing Theming from 
+ * 'styled-components' library, speifically 'ThemeProvider' 
+ * Component in order to build a 'DarkTheme' app
  */
 
-
 function App() {
+
   return (
     <>
-      {/**Here i place it and the 'Global Styles' are 
-       * applied */}
-      <GlobalStyles />
-      <Setup />
+       <Setup />
     </>
   );
 }
