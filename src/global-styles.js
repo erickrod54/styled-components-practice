@@ -1,20 +1,15 @@
 /**first i import 'createGlobalStyle'*/
 import { createGlobalStyle } from "styled-components";
 
-/**Card app version  3 - 'global-styles' js file - Features:
+/**DarkTheme app version  1 - 'global-styles' js file - 
+ * Features:
  * 
- *        --> Implementing 'Globlal Setup' with Style Components.
+ *        --> Placing on 'GlobalStyles' Component 'btn' 
+ *            code.
  * 
- * Note: This is an alternative to the 'Global Styles' sheet -
- * index.css - and this alternative made use of Styled 
- * Components.
- * 
- * --this implementation can be done for some cases where 
- * --i cannot use the index css sheet, so this will suit well
+ * Note: 'btn' class style comes from index css, i placed it here
+ * to apply styles to the button on 'DarkThemeApp' Component
  */
-
-/**here after using 'createGlobalStyle' */
-/**i can take the global styles and using them here */
 
 const GlobalStyles = createGlobalStyle`
     /** i copy :root and body styles from 'index' css 
@@ -36,6 +31,23 @@ const GlobalStyles = createGlobalStyle`
       -moz-osx-font-smoothing: grayscale;
       background: #f2f4f8;
     }
+
+/*this style is for the button**/
+.btn{
+  background: #171717;
+  /*the color of the button text**/
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  /*the hand of the cursor**/
+  cursor: pointer;
+  text-transform: capitalize;
+  padding: 0.25rem;
+  display: block;
+  width: 200px;
+  /*this property set it on center**/
+  margin: 1rem auto;
+}
 `
 
 export default GlobalStyles;
