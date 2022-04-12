@@ -1,14 +1,13 @@
 import React from 'react';
-import Setup from './setup-app/dark-theme-app/darktheme-app'
+import Setup from './setup-app/animations-app/animations-app'
 
-/**DarkTheme app version  1 - 'App' js file - 
+/**Animations app version  1 - 'App' js file - 
  * Features:
  * 
- *        --> Setting up 'DarkTheme' app.
+ *        --> Setting up 'Animations' app.
  * 
- * Note: this app is about implementing Theming from 
- * 'styled-components' library, speifically 'ThemeProvider' 
- * Component in order to build a 'DarkTheme' app
+ * Note: this app is about how to make Animations using
+ * Styled Components.
  */
 
 function App() {
