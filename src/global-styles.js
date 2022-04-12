@@ -1,11 +1,10 @@
 /**first i import 'createGlobalStyle'*/
 import { createGlobalStyle } from "styled-components";
 
-/**DarkTheme app version  1 - 'global-styles' js file - 
+/**DarkTheme app version  2 - 'global-styles' js file - 
  * Features:
  * 
- *        --> Placing on 'GlobalStyles' Component 'btn' 
- *            code.
+ *        --> Implementing 'hover' on 'btn' class style
  * 
  * Note: 'btn' class style comes from index css, i placed it here
  * to apply styles to the button on 'DarkThemeApp' Component
@@ -34,7 +33,7 @@ const GlobalStyles = createGlobalStyle`
 
 /*this style is for the button**/
 .btn{
-  background: #171717;
+  background: #9B0E27;
   /*the color of the button text**/
   color: #fff;
   border: none;
@@ -47,6 +46,10 @@ const GlobalStyles = createGlobalStyle`
   width: 200px;
   /*this property set it on center**/
   margin: 1rem auto;
+  
+  &:hover{
+    background: hsl(205, 78%, 60%);;
+  }
 }
 `
 
