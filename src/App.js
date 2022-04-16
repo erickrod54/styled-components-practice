@@ -1,14 +1,14 @@
 import React from 'react';
-import Setup from './setup-app/animations-app/animations-app'
+import Setup from './setup-app/as-prop-app/as-prop-app'
 
-/**Animations app version  1 - 'App' js file - 
- * Features:
+/**As-prop app version 1 - 'App js' file - Features:
  * 
- *        --> Setting up 'Animations' app.
+ *          -->Importing and Placing As-prop-app.
  * 
- * Note: this app is about how to make Animations using
- * Styled Components.
- */
+ * Notes: 'as' prop is a wildcard ( comodin ) and is use to
+ * integrate features indicating the element that i need.
+ * 
+*/
 
 function App() {
 
