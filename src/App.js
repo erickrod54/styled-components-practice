@@ -1,12 +1,15 @@
 import React from 'react';
-import Setup from './setup-app/as-prop-app/as-prop-app'
+import Setup from './setup-app/macro-css-app/macro-css-app'
 
-/**As-prop app version 1 - 'App js' file - Features:
+/**Macro-css-app app version 1 - 'App js' file - Features:
  * 
- *          -->Importing and Placing As-prop-app.
+ *          -->Importing and Placing Macro-css-app.
  * 
- * Notes: 'as' prop is a wildcard ( comodin ) and is use to
- * integrate features indicating the element that i need.
+ * Notes: macro and the 'css' prop is a fast way to apply specific 
+ * styles to Styled Components and this implementation has 
+ * benefits as friendly classNames when i inspect them.
+ * 
+ * ------------friendly classNames are easy to manage.
  * 
 */
 
