@@ -1,9 +1,10 @@
 import React from 'react';
-import Setup from './setup-app/macro-css-app/macro-css-app'
+import Setup from './setup-app/css-helper-function-app/css-helper-function-app'
 
-/**Macro-css-app app version 1 - 'App js' file - Features:
+/**Css helper function app version 1 - 'App js' file - 
+ * Features:
  * 
- *          -->Importing and Placing Macro-css-app.
+ *          -->Importing and Placing 'CssHelperFunctionApp'.
  * 
  * Notes: macro and the 'css' prop is a fast way to apply specific 
  * styles to Styled Components and this implementation has 
