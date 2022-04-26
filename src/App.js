@@ -1,17 +1,16 @@
 import React from 'react';
-import Setup from './setup-app/css-helper-function-app/css-helper-function-app'
+import Setup from './setup-app/form-app/form-app'
+import './index.css'
 
-/**Css helper function app version 1 - 'App js' file - 
- * Features:
+/**Form-app version 1 - 'form-app' file - Features:
  * 
- *          -->Importing and Placing 'CssHelperFunctionApp'.
+ *          -->Importing and Placing 'FormApp'.
  * 
- * Notes: macro and the 'css' prop is a fast way to apply specific 
- * styles to Styled Components and this implementation has 
- * benefits as friendly classNames when i inspect them.
- * 
- * ------------friendly classNames are easy to manage.
- * 
+ * Note: 'FormButton' has applied 'attrs' feature that is
+ * as native handler for props, this case it handles for
+ * a demonstration props as 'type' of 'text' or 
+ * submit, because 'click me' and 'submit' that has
+ * two different 'types' props -text and submit- 
 */
 
 function App() {
