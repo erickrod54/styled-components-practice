@@ -1,10 +1,10 @@
 import React from 'react';
-import Setup from './setup-app/form-app/form-app'
+import Setup from './setup-app/more-complex-props-app/more-complex-props-app'
 import './index.css'
 
-/**Form-app version 1 - 'form-app' file - Features:
+/**MoreComplexPropsApp version 1 - 'App' js file - Features:
  * 
- *          -->Importing and Placing 'FormApp'.
+ *          -->Importing and Placing 'MoreComplexPropsApp'.
  * 
  * Note: 'FormButton' has applied 'attrs' feature that is
  * as native handler for props, this case it handles for
