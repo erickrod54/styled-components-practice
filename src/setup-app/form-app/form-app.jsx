@@ -1,20 +1,16 @@
 import React from "react";
 import "styled-components/macro";
-import { FormButton } from "./components/form.styles";
+import { FormButton, BasicInput } from "./components/form.styles";
 
-/**Form-app version 1 - 'form-app' file - Features:
+/**Form-app version 2 - 'form-app' file - Features:
  * 
- *          -->Buildinng a Basic Form.
+ *          -->Importing and Placing 'BasicInput'.
  * 
- *          -->Applying 'css' macro to the form.
+ *          -->Setting a 'type' and 'placeholder' for
+ *              email 'BasicInput'.
  * 
- *          -->Importing and Placing 'FormButton'.
- * 
- * Note: 'FormButton' has applied 'attrs' feature that is
- * as native handler for props, this case it handles for
- * a demonstration props as 'type' of 'text' or 
- * submit, because 'click me' and 'submit' that has
- * two different 'types' props -text and submit- 
+ * Note: email 'BasicInput' is the only different, because
+ * is based on the conditionally 'attrs'.
 */
 
 const FormApp = () => {
@@ -30,7 +26,10 @@ const FormApp = () => {
                 padding:2rem;
                 margin-top:1rem;`}>
                     <h2>Form</h2>
-                    <input type='text' />
+                    <BasicInput />
+                    <BasicInput />
+                    <BasicInput />
+                    <BasicInput type='email' placeholder='enter email'/>
                     {/**inspecting will keep 'submit' */}
                     <FormButton type='submit'>submit here</FormButton>
                 </form>
