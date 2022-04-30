@@ -1,13 +1,12 @@
 import React from "react";
 import List from "./components/list.component";
+import Products from "./components/products.component";
 import MoreComplexPropsStyles from "../../styles.more-complex-props-app";
 
-/**MoreComplexPropsApp version 1 - 'more-complex-props-app' 
+/**MoreComplexPropsApp version 2 - 'more-complex-props-app' 
  * file - Features:
  * 
- *        -->Importing and Placing 'List' Component.
- * 
- *        --> Importing and Placing 'MoreComplexPropsStyles'.
+ *        -->Importing and Placing 'Products' Component.
  * 
  * Notes: 'List' Component is going to display a list of items,
  * and they are going to be conditionally styled, Importing and
@@ -21,7 +20,8 @@ const MoreComplexPropsApp = () => {
         <>
             <MoreComplexPropsStyles />
             <h2>More Complex App</h2>
-            <List />
+            <List />    
+            <Products />
         </>
     )
 }
