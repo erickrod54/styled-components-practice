@@ -1,17 +1,13 @@
 import styled, { css } from "styled-components";
 
-/**MoreComplexPropsApp version 1 - 'more-complex-props-app' 
- * file - Features:
+/**MoreComplexPropsApp version 2 - 'styled.components' 
+ * Component - Features:
  * 
- *        -->Building 'Fruit' Style Component.
+ *        -->Building 'AppPropsWrapper'
  * 
- *        -->Building css helper function to set styles
- *          conditionally base on the 'odd' item.
- * 
- * Notes: 'List' Component is going to display a list of items,
- * and they are going to be conditionally styled, Importing and
- * placing 'MoreComplexPropsStyles' to set styles for the app
- * 
+ * Notes: 'price' prop previously drilled from 
+ * 'SingleProduct' i implement on it a 'css helper function'
+ * to set 'color' selectivly to the price - p tag -
  * */
 
 export const Fruit = styled.li`
@@ -30,4 +26,26 @@ export const Fruit = styled.li`
                 padding: 1rem;
             `
     }}
+`
+
+export const AppPropsWrapper = styled.article`
+    width: 300px;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h4{
+        text-transform: capitalize;
+    }
+    p{
+      color: ${({ price }) => {
+             if (price < 300) return 'green'
+             if (price >= 300) return 'red'   
+            return '#222'
+        }}
+    }
 `
